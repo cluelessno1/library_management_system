@@ -1,0 +1,231 @@
+bash: virtualenvwrapper.sh: No such file or directory
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 ~
+$ cd /d/python-project/library_management_system
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system
+$ git init
+Initialized empty Git repository in D:/python-project/library_management_system/.git/
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ echo 'venv' > .gitignore
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ cd /d/python-project/myproject/venv
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject/venv (master)
+$ cd /d/python-project/library_management_system
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ cd \venv
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system/venv (master)
+$ source Scripts/activate
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system/venv (master)
+$ cd /d/python-project/library_management_system
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ pip freeze > requirements.txt
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ python -m pip install numpy
+Collecting numpy
+  Downloading https://files.pythonhosted.org/packages/26/26/73ba03b2206371cdef62afebb877e9ba90a1f0dc3d9de22680a3970f5a50/numpy-1.17.0-cp37-cp37m-win_amd64.whl (12.8MB)
+Installing collected packages: numpy
+Successfully installed numpy-1.17.0
+You are using pip version 10.0.1, however version 19.2.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ python -m pip install scipy
+Collecting scipy
+  Downloading https://files.pythonhosted.org/packages/53/17/9dfd64540b6645fae581462ed2d1c8e680b7e946ca2789c5149693660392/scipy-1.3.0-cp37-cp37m-win_amd64.whl (30.3MB)
+Requirement already satisfied: numpy>=1.13.3 in d:\python-project\library_management_system\venv\lib\site-packages (from scipy) (1.17.0)
+Installing collected packages: scipy
+Successfully installed scipy-1.3.0
+You are using pip version 10.0.1, however version 19.2.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ python -m pip install matplotlib
+Collecting matplotlib
+  Downloading https://files.pythonhosted.org/packages/1a/c0/69e3f695d7384012e90be1e16570c08953baae00fd98094179ef87c7d5a2/matplotlib-3.1.1-cp37-cp37m-win_amd64.whl (9.1MB)
+Collecting python-dateutil>=2.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/41/17/c62faccbfbd163c7f57f3844689e3a78bae1f403648a6afb1d0866d87fbb/python_dateutil-2.8.0-py2.py3-none-any.whl (226kB)
+Requirement already satisfied: numpy>=1.11 in d:\python-project\library_management_system\venv\lib\site-packages (from matplotlib) (1.17.0)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/f7/d2/e07d3ebb2bd7af696440ce7e754c59dd546ffe1bbe732c8ab68b9c834e61/cycler-0.10.0-py2.py3-none-any.whl
+Collecting kiwisolver>=1.0.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/c6/ea/e5474014a13ab2dcb5056608e0716c600c3d8a8bcffb10ed55ccd6a42eb0/kiwisolver-1.1.0-cp37-none-win_amd64.whl (57kB)
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 (from matplotlib)
+  Downloading https://files.pythonhosted.org/packages/ff/2c/afc36631a9e0dc9f2b8bd4c19fa2d330cbe07d6679a1c0910418a200acad/pyparsing-2.4.1.1-py2.py3-none-any.whl (64kB)
+Collecting six>=1.5 (from python-dateutil>=2.1->matplotlib)
+  Using cached https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Requirement already satisfied: setuptools in d:\python-project\library_management_system\venv\lib\site-packages\setuptools-39.1.0-py3.7.egg (from kiwisolver>=1.0.1->matplotlib) (39.1.0)
+Installing collected packages: six, python-dateutil, cycler, kiwisolver, pyparsing, matplotlib
+Successfully installed cycler-0.10.0 kiwisolver-1.1.0 matplotlib-3.1.1 pyparsing-2.4.1.1 python-dateutil-2.8.0 six-1.12.0
+You are using pip version 10.0.1, however version 19.2.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ pip freeze > requirements.txt
+You are using pip version 10.0.1, however version 19.2.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ ls
+library_interface.py  requirements.txt  venv/
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git add --all
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git commit -m "Basic Class Created and Executed"
+[master (root-commit) 98bdd41] Basic Class Created and Executed
+ 10 files changed, 272 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .idea/encodings.xml
+ create mode 100644 .idea/library_management_system.iml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/other.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 library_interface.py
+ create mode 100644 requirements.txt
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git remote add origin https://github.com/cluelessno1/learning-on-my-own.git
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git remote -v
+origin  https://github.com/cluelessno1/learning-on-my-own.git (fetch)
+origin  https://github.com/cluelessno1/learning-on-my-own.git (push)
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git push origin master
+To https://github.com/cluelessno1/learning-on-my-own.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cluelessno1/learning-on-my-own.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git push origin master
+To https://github.com/cluelessno1/learning-on-my-own.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cluelessno1/learning-on-my-own.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git pull origin master
+warning: no common commits
+remote: Enumerating objects: 53, done.
+remote: Counting objects: 100% (53/53), done.
+remote: Compressing objects: 100% (40/40), done.
+remote: Total 53 (delta 26), reused 36 (delta 9), pack-reused 0
+Unpacking objects: 100% (53/53), done.
+From https://github.com/cluelessno1/learning-on-my-own
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git push origin master
+To https://github.com/cluelessno1/learning-on-my-own.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/cluelessno1/learning-on-my-own.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git commit -m "Basic Class Created and Executed"
+On branch master
+nothing to commit, working tree clean
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ ls
+library_interface.py  requirements.txt  venv/
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git push origin master
+To https://github.com/cluelessno1/learning-on-my-own.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/cluelessno1/learning-on-my-own.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git log
+commit 98bdd411aa53258fb6b04d84d1e121a9bd36bfd9 (HEAD -> master)
+Author: Shashwat Agrawal <shashwat1999@gmail.com>
+Date:   Sun Jul 28 00:14:53 2019 +0530
+
+    Basic Class Created and Executed
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git branch --set-upstream-to=origin/<branch> master
+bash: branch: No such file or directory
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git remote add origin https://github.com/cluelessno1/library_management_system.git
+fatal: remote origin already exists.
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git remote rm origin
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git remote add origin https://github.com/cluelessno1/library_management_system.git
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git remote -v
+origin  https://github.com/cluelessno1/library_management_system.git (fetch)
+origin  https://github.com/cluelessno1/library_management_system.git (push)
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git push origin master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 4.20 KiB | 113.00 KiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0)
+To https://github.com/cluelessno1/library_management_system.git
+ * [new branch]      master -> master
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$
