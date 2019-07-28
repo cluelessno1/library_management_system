@@ -1,9 +1,10 @@
 import numpy as np
 
 class book_details:
-    def __init__(self, title, author):
+    def __init__(self, title, author, ref_no):
         self.title = title
         self.author = author
+        self.ref_no = ref_no
 
 
 print("\t\t\t*****Library Management System*****")
