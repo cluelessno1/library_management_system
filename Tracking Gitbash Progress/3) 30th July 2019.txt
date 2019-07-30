@@ -1,0 +1,126 @@
+bash: virtualenvwrapper.sh: No such file or directory
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 ~
+$ cd /d/python-project/library_management_system
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ \venv
+bash: venv: command not found
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ cd \venv
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system/venv (master)
+$ source Scripts/activate
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system/venv (master)
+$ cd /d/python-project/library_management_system
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git add databse_practice_2
+fatal: pathspec 'databse_practice_2' did not match any files
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git add databse_practice_2.py
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git add library.db
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git add checking input
+fatal: pathspec 'checking' did not match any files
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git add checking_input.py
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   checking_input.py
+        new file:   databse_practice_2.py
+        new file:   library.db
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .idea/library_management_system.iml
+        modified:   .idea/other.xml
+        modified:   .idea/workspace.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        sales.db-journal
+
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git add --all
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .idea/library_management_system.iml
+        modified:   .idea/other.xml
+        modified:   .idea/workspace.xml
+        new file:   checking_input.py
+        new file:   databse_practice_2.py
+        new file:   library.db
+        new file:   sales.db-journal
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   sales.db-journal
+
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git add --all
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .idea/library_management_system.iml
+        modified:   .idea/other.xml
+        modified:   .idea/workspace.xml
+        new file:   checking_input.py
+        new file:   databse_practice_2.py
+        new file:   library.db
+
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git commit -m "Made some progress with user entering data in database through a menu"
+[master ac9f538] Made some progress with user entering data in database through a menu
+ 6 files changed, 162 insertions(+), 39 deletions(-)
+ create mode 100644 checking_input.py
+ create mode 100644 databse_practice_2.py
+ create mode 100644 library.db
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git push origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 2.49 KiB | 637.00 KiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/cluelessno1/library_management_system.git
+   5b6bba5..ac9f538  master -> master
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$
