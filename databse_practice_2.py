@@ -1,6 +1,10 @@
 import sys #this allows you to use the sys.exit command to quit/logout of the application
 from sqlalchemy import Column, Integer, String
 from sqlalchemy import create_engine
+from sqlalchemy import text #For using SQL text based commands in Quesry statements
+
+
+
 engine = create_engine('sqlite:///library.db', echo = True)
 from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
@@ -24,9 +28,16 @@ def add_record():
     session.commit()
     main_menu()
 
-
+def display_records():
+    result = session.query(Book).from_statement(text("SELECT * FROM books")).all()
+    print("\n")
+    for row in result:
+        print("Book Name: ", row.name, "Author:", row.author)
+    print("\n")
+    main_menu()
 
 def main_menu():
+
     print("####### Main Menu #########")
     print()
     choice = input("1. Add a record\n2. Display all records\n3. Exit\nEnter your choice:")
