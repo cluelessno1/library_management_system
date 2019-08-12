@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65bc976b-7d70-4278-8b18-ede7a4d79c59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databse_practice_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/databse_practice_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.db" beforeDir="false" afterPath="$PROJECT_DIR$/library.db" afterDir="false" />
-    </list>
+    <list default="true" id="65bc976b-7d70-4278-8b18-ede7a4d79c59" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +47,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/databse_practice_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
+            <state relative-caret-position="-1241">
               <caret line="120" column="38" lean-forward="true" selection-start-line="120" selection-start-column="38" selection-end-line="120" selection-end-column="38" />
               <folding>
                 <element signature="e#0#89#0" expanded="true" />
@@ -303,12 +299,12 @@
       <workItem from="1564687501400" duration="4226000" />
       <workItem from="1565117368097" duration="5597000" />
       <workItem from="1565123069239" duration="20000" />
-      <workItem from="1565618977168" duration="5672000" />
+      <workItem from="1565618977168" duration="5954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33097000" />
+    <option name="totallyTimeSpent" value="33379000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,7 +390,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/databse_practice_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
+        <state relative-caret-position="-1241">
           <caret line="120" column="38" lean-forward="true" selection-start-line="120" selection-start-column="38" selection-end-line="120" selection-end-column="38" />
           <folding>
             <element signature="e#0#89#0" expanded="true" />
