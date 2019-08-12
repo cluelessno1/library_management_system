@@ -26,9 +26,87 @@ Session = sessionmaker(bind = engine)
 session = Session()
 
 
-def update_record(book_isbn):
-    print("Have to make this")
-    main_menu()
+def update_record():
+    #print("Have to make this")
+    choice = int(input("1. Update Book records \n2. Main Menu"))
+    if choice == 1:
+
+        while True:
+            book_isbn = int(input("Enter the ISBN Number of book who's data you want to update :"))
+            if len(str(book_isbn)) != 10:
+                if len(str(book_isbn)) != 13:
+                    print("ISBN is 10 or 13 digit number, please enter it correctly again")
+                    continue
+            result = session.query(Book).all()
+            flag = False
+            for row in result:
+                if row.isbn == int(book_isbn):
+                    flag = True
+                    break
+            if flag:  # If written while flag: it gave logical error on execution. The value of book_isbn became fixed at the first eneterd value,
+                break
+            else:
+                print("\n\nThis ISBN doesn't exist.\nEnter an existing ISBN number to update record.\n\n")
+                continue
+
+
+        result = session.query(Book).filter(Book.isbn == int(book_isbn))
+        print("\n")
+        for row in result:
+            print("ISBN: ", row.isbn, "Book Name: ", row.name, "Author:", row.author, "Publisher :", row.publisher,
+                  "Quantity :", row.quantity, "Checked Out :", row.checked_out)
+        print("\n")
+        while True:
+            choice_1 = int(input(
+                "Update\n1. ISBN\n2. Book Name\n3. Book Author\n4. Book Publisher\n5. Book Quantity\n6. Main Menu\nEnter your choice :"))
+            if choice_1 == 1:
+                ## book_isbn = int(input("Enter new ISBN :"))
+                book_isbn = check_isbn()
+                row.isbn = book_isbn
+                print("ISBN: ", row.isbn, "Book Name: ", row.name, "Author:", row.author, "Publisher :", row.publisher,
+                      "Quantity :", row.quantity, "Checked Out :", row.checked_out)
+                session.commit()
+                break
+            elif choice_1 == 2:
+                book_name = input("Enter new book name :")
+                row.name = book_name
+                print("ISBN: ", row.isbn, "Book Name: ", row.name, "Author:", row.author, "Publisher :", row.publisher,
+                      "Quantity :", row.quantity, "Checked Out :", row.checked_out)
+                session.commit()
+                break
+            elif choice_1 == 3:
+                book_author = input("Enter new book author :")
+                row.author = book_author
+                print("ISBN: ", row.isbn, "Book Name: ", row.name, "Author:", row.author, "Publisher :", row.publisher,
+                      "Quantity :", row.quantity, "Checked Out :", row.checked_out)
+                session.commit()
+                break
+            elif choice_1 == 4:
+                book_publisher = input("Enter new book publisher :")
+                row.publisher = book_publisher
+                print("ISBN: ", row.isbn, "Book Name: ", row.name, "Author:", row.author, "Publisher :", row.publisher,
+                      "Quantity :", row.quantity, "Checked Out :", row.checked_out)
+                session.commit()
+                break
+            elif choice_1 == 5:
+                book_quantity = input("Enter new book quantity :")
+                row.quantity = book_quantity
+                print("ISBN: ", row.isbn, "Book Name: ", row.name, "Author:", row.author, "Publisher :", row.publisher,
+                      "Quantity :", row.quantity, "Checked Out :", row.checked_out)
+                session.commit()
+                break
+            elif choice_1 == 6:
+                break
+            else:
+                print("Invalid input\nPlease enter again")
+                continue
+        main_menu()
+    elif choice == 2:
+        main_menu()
+    else:
+        print("Invalid choice enterred, please enter again")
+        update_record()
+
 
 def check_isbn(): ##To check if the length of the inputted ISBN is 10 or 13 and whther such an ISBN already exists.
     book_isbn = input("Enter ISBN number of the book :")
@@ -51,7 +129,7 @@ def check_isbn(): ##To check if the length of the inputted ISBN is 10 or 13 and 
                 check_isbn()
                 break
             elif choice == 2:
-                update_record(int(book_isbn)) #Have to create this function.
+                update_record() #Have to create this function.
                 break
             elif choice == 3:
                 main_menu()
@@ -117,7 +195,7 @@ def main_menu():
 
     print("####### Main Menu #########")
     print()
-    choice = input("1. Add record\n2. Display record\n3. Exit\nEnter your choice:")
+    choice = input("1. Add record\n2. Update Record \n3. Display record\n4. Exit\nEnter your choice:")
 
     # Add a delete record and update record to complete the first part
     # After that try and create a table members/memberships and try to integrate that with the table Book
@@ -128,8 +206,10 @@ def main_menu():
     if choice == '1': ###The input is being taken as a string, if we write 1 insted of '1', it will not work.
         add_record()
     elif choice == '2':
-        display_records()
+        update_record()
     elif choice == '3':
+        display_records()
+    elif choice == '4':
         sys.exit()
     else:
         print("The valid inputs are 1,2 and 3 only.\nPlease try again.")
