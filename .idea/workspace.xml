@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65bc976b-7d70-4278-8b18-ede7a4d79c59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databse_practice_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/databse_practice_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.db" beforeDir="false" afterPath="$PROJECT_DIR$/library.db" afterDir="false" />
-    </list>
+    <list default="true" id="65bc976b-7d70-4278-8b18-ede7a4d79c59" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,12 +300,12 @@
       <workItem from="1565117368097" duration="5597000" />
       <workItem from="1565123069239" duration="20000" />
       <workItem from="1565618977168" duration="7004000" />
-      <workItem from="1565808227587" duration="2653000" />
+      <workItem from="1565808227587" duration="2909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37082000" />
+    <option name="totallyTimeSpent" value="37338000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

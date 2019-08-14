@@ -1,0 +1,35 @@
+bash: virtualenvwrapper.sh: No such file or directory
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 ~
+$ cd /d/python-project/library_management_system/venv
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system/venv (master)
+$ source Scripts/activate
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system/venv (master)
+$ cd /d/python-project/library_management_system
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git add --all
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git commit -m "Delete function added and polished it up a bit. One table operations completed."
+[master 4f18aec] Delete function added and polished it up a bit. One table operations completed.
+ 3 files changed, 109 insertions(+), 31 deletions(-)
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$ git push origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.63 KiB | 557.00 KiB/s, done.
+Total 6 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/cluelessno1/library_management_system.git
+   248483e..4f18aec  master -> master
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/library_management_system (master)
+$
